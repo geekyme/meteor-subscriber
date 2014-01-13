@@ -9,9 +9,13 @@ Simply do this
 Add the template to your project
 ```{{> subscriberClassic}}```
 
+The size of the template is made to fill 100% of its container, so wrap a container around it with your desired width.
+
 Whenever someone fills in the form and hits the 'subscribe' button, their email along with the timestamp gets saved into a collection named 'subscribers'
 
 As this is just an initial version, the template is not very pretty. I intend to polish up the design over the next week. 
+
+[DEMO]('https://subscribers.meteor.com/')
 
 TODO
 ====
