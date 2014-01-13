@@ -12,3 +12,9 @@ Add the template to your project
 Whenever someone fills in the form and hits the 'subscribe' button, their email along with the timestamp gets saved into a collection named 'subscribers'
 
 As this is just an initial version, the template is not very pretty. I intend to polish up the design over the next week. 
+
+TODO
+====
+* Design
+* Tests
+* Some customization options
