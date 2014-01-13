@@ -4,10 +4,10 @@ Meteor-subscriber
 I make several landing pages for my own ideas and I always need a quick way to collect emails. This package solves that problem by providing a super easy way to add an email 'subscribe' form to your project pages. 
 
 Simply do this
-	mrt install subscriber
+```mrt install subscriber```
 
 Add the template to your project
-	{{> subscriberClassic}}
+```{{> subscriberClassic}}```
 
 Whenever someone fills in the form and hits the 'subscribe' button, their email along with the timestamp gets saved into a collection named 'subscribers'
 
