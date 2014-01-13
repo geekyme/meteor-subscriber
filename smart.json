@@ -1,8 +1,8 @@
 {
 	"name": "subscriber",
 	"description": "Plug and play package for collecting emails. Use this for landing pages or newsletter subscription.",
-	"homepage": "https://github.com/geekyme/meteor-subscribers",
+	"homepage": "https://github.com/geekyme/meteor-subscriber",
 	"author": "https://github.com/geekyme",
 	"version": "0.1.0",
-	"git": "https://github.com/geekyme/meteor-subscribers.git"
+	"git": "https://github.com/geekyme/meteor-subscriber.git"
 }
