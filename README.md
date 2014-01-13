@@ -15,7 +15,7 @@ Whenever someone fills in the form and hits the 'subscribe' button, their email 
 
 As this is just an initial version, the template is not very pretty. I intend to polish up the design over the next week. 
 
-[DEMO]('https://subscriber.meteor.com/')
+[DEMO](https://subscriber.meteor.com/)
 
 TODO
 ====
