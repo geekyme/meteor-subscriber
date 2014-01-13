@@ -15,6 +15,6 @@ As this is just an initial version, the template is not very pretty. I intend to
 
 TODO
 ====
-* Design
+* Design / better looking templates
 * Tests
 * Some customization options
