@@ -1,14 +1,53 @@
 .form-wrapper
-	background-image repeating-linear-gradient(-41deg, #32a4ca 1px, #34a8ce 19px, #32a4ca 20px, #fffae8 21px, #f5f1e5 39px, #f8fef4 40px, #d05025 41px, #d46139 59px, #d05025 60px, #fffae8 61px, #f5f1e5 79px, #f8fef4 80px, #32a4ca 81px, #34a8ce 99px, #32a4ca 100px, #fffae8 101px, #f5f1e5 119px, #f8fef4 120px, #d05025 121px, #d46139 139px, #d05025 140px, #fffae8 141px, #f5f1e5 159px, #f8fef4 160px, #32a4ca 161px, #34a8ce 179px, #32a4ca 180px, #fffae8 181px, #f5f1e5 199px, #f8fef4 200px, #d05025 201px, #d46139 219px, #d05025 220px, #fffae8 221px, #f5f1e5 239px, #f8fef4 240px, #32a4ca 241px, #34a8ce 259px, #32a4ca 260px, #fffae8 261px, #f5f1e5 279px, #f8fef4 280px, #d05025 281px, #d46139 299px, #d05025 300px, #fffae8 301px, #f5f1e5 319px, #f8fef4 320px);
+	box-sizing border-box
+	background-image repeating-linear-gradient(-41deg, #699DB6 1px, #5890ad 19px, #699DB6 20px, #fffae8 21px, #f5f1e5 39px, #f8fef4 40px, #d05025 41px, #d46139 59px, #d05025 60px, #fffae8 61px, #f5f1e5 79px, #f8fef4 80px, #699DB6 81px, #5890ad 99px, #699DB6 100px, #fffae8 101px, #f5f1e5 119px, #f8fef4 120px, #d05025 121px, #d46139 139px, #d05025 140px, #fffae8 141px, #f5f1e5 159px, #f8fef4 160px, #699DB6 161px, #5890ad 179px, #699DB6 180px, #fffae8 181px, #f5f1e5 199px, #f8fef4 200px, #d05025 201px, #d46139 219px, #d05025 220px, #fffae8 221px, #f5f1e5 239px, #f8fef4 240px, #699DB6 241px, #5890ad 259px, #699DB6 260px, #fffae8 261px, #f5f1e5 279px, #f8fef4 280px, #d05025 281px, #d46139 299px, #d05025 300px, #fffae8 301px, #f5f1e5 319px, #f8fef4 320px)
 	background-size cover
 	padding 10px
 	width 100%
+	border-radius: 5px
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 -1px 0 rgba(0, 0, 0, 0.2) inset, 0 0 3px #a6a893
+	*
+		box-sizing border-box
 	&.animate
 		-webkit-animation bg-animate 3s linear infinite
 	form
 		width 100%
 		margin 0
+		background linear-gradient(#f6f2e6, #f1ead7)
+		padding 30px
+		border 1px dotted #b7a780
+		.fill-email
+			background #f5f3ed;
+			box-shadow 0 1px 1px #ccc0a4 inset, 0 -1px 0 #e6e1d7 inset, 0 1px 0 #fefefd
+			color #7b745e
+			padding-left 20px
+			border 0
+			border-radius 44px
+			font-size 13px
+			font-weight bold
+			height 44px
+			outline 0
+		.subscribe-button
+			background-color #699DB6
+			border-color rgba(0,0,0,0.3)
+			text-shadow 0 1px 0 rgba(0,0,0,0.5)
+			color #FFF
+			width 100%
+			border-radius 44px
+			height 44px
+			&:hover
+				background-color #5890ad
+				border-color rgba(0,0,0,0.5)
 
+// background: linear-gradient(#e9764e, #af3b13);
+// border: 1px solid #a3381b;
+// box-shadow: 0 1px 0 #ffb68e inset, 0 -1px 0 #964022 inset, 0 -4px 5px #c04d25 inset, 0 1px 3px #b2a394;
+// color: #fff;
+// text-shadow: 0 1px 1px #6b0300;
+// text-transform: uppercase;
+// border-radius: 44px;
+// height: 44px;
+// width: 100%;
 
 @keyframes bg-animate {
   0% {

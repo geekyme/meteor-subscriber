@@ -1,14 +1,13 @@
 <template name="subscriberClassic">
 	<div class="form-wrapper">
-		<form class="subscriber-form well">
-			<h4>Subscribe to receive periodic updates for this app!</h4>
+		<form class="subscriber-form">
 			<div class="form-group">
 				{{#if status}}
 					<div class="alert {{class}}">{{message}}</div>
 				{{/if}}
-				<input class="form-control" placeholder="myemail@example.com" required type="email">
+				<input class="form-control fill-email" placeholder="myemail@example.com" required type="email">
 			</div>		
-			<button type="submit" class="btn btn-primary">Subcribe</button>
+			<button type="submit" class="btn btn-primary subscribe-button">Subcribe</button>
 		</form>	
 	</div>
 </template>
