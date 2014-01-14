@@ -3,6 +3,6 @@
 	"description": "Plug and play package for collecting emails. Use this for landing pages or newsletter subscription.",
 	"homepage": "https://github.com/geekyme/meteor-subscriber",
 	"author": "Shawn Lim (https://github.com/geekyme)",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"git": "https://github.com/geekyme/meteor-subscriber.git"
 }
