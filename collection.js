@@ -1,0 +1,1 @@
+Subscribers = new Meteor.Collection('subscribers');

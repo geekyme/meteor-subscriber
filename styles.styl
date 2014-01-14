@@ -1,0 +1,21 @@
+.form-wrapper
+	background-image repeating-linear-gradient(-41deg, #32a4ca 1px, #34a8ce 19px, #32a4ca 20px, #fffae8 21px, #f5f1e5 39px, #f8fef4 40px, #d05025 41px, #d46139 59px, #d05025 60px, #fffae8 61px, #f5f1e5 79px, #f8fef4 80px, #32a4ca 81px, #34a8ce 99px, #32a4ca 100px, #fffae8 101px, #f5f1e5 119px, #f8fef4 120px, #d05025 121px, #d46139 139px, #d05025 140px, #fffae8 141px, #f5f1e5 159px, #f8fef4 160px, #32a4ca 161px, #34a8ce 179px, #32a4ca 180px, #fffae8 181px, #f5f1e5 199px, #f8fef4 200px, #d05025 201px, #d46139 219px, #d05025 220px, #fffae8 221px, #f5f1e5 239px, #f8fef4 240px, #32a4ca 241px, #34a8ce 259px, #32a4ca 260px, #fffae8 261px, #f5f1e5 279px, #f8fef4 280px, #d05025 281px, #d46139 299px, #d05025 300px, #fffae8 301px, #f5f1e5 319px, #f8fef4 320px);
+	background-size cover
+	padding 10px
+	width 100%
+	&.animate
+		-webkit-animation bg-animate 3s linear infinite
+	form
+		width 100%
+		margin 0
+
+
+@keyframes bg-animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}

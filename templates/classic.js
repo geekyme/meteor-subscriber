@@ -1,0 +1,38 @@
+Template.subscriberClassic.events({
+	'submit .subscriber-form': function (e) {
+		e.preventDefault();
+		var target = e.target;
+		var email = $(target).find('input').val(); // fetch the input value
+		var date = new Date().getTime(); // in epoch milliseconds
+		$(target).parent().addClass('animate');
+		Subscribers.insert({email: email, joined: date}, function(err, id){
+			if(err){ 
+				Session.set('subscribeStatus', {
+					message: 'Something went wrong! Please try again later',
+					class: 'alert-danger'
+				})
+				throw Meteor.Error(500, 'Something crop up. Check the error object', err);
+			}
+			console.log('successfully inserted subscriber: '+id);
+			$(target).find('input').val("");
+			$(target).parent().removeClass('animate');
+			Session.set('subscribeStatus', {
+				message: 'Thank you for subscribing!',
+				class: 'alert-success'
+			})
+		});
+	}
+});
+
+Template.subscriberClassic.helpers({
+	status: function () {
+		// ...
+		return Session.get('subscribeStatus');
+	},
+	message: function(){
+		return Session.get('subscribeStatus').message;
+	},
+	class: function(){
+		return Session.get('subscribeStatus').class;
+	}
+});
