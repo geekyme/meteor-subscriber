@@ -11,11 +11,13 @@ Add the template to your project
 
 The size of the template is made to fill 100% of its container, so wrap a container around it with your desired width.
 
-Whenever someone fills in the form and hits the 'subscribe' button, their email along with the timestamp gets saved into a collection named 'subscribers'
-
-As this is just an initial version, the template is not very pretty. I intend to polish up the design over the next week. 
-
 [DEMO](https://subscriber.meteor.com/)
+
+FEATURES
+====
+* Easy installation
+* populate collection 'subscribe' with documents (properties: email, timestamps)
+* show status after pressing subscribe button to show success / failure
 
 TODO
 ====
