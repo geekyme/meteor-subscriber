@@ -8,18 +8,19 @@ Template.subscriberClassic.events({
 		Subscribers.insert({email: email, joined: date}, function(err, id){
 			if(err){ 
 				Session.set('subscribeStatus', {
-					message: 'Something went wrong! Please try again later',
+					message: '<b>Damn</b>. An error occured. Try again later?',
 					class: 'alert-danger'
 				})
-				throw Meteor.Error(500, 'Something crop up. Check the error object', err);
-			}
-			console.log('successfully inserted subscriber: '+id);
-			$(target).find('input').val("");
-			$(target).parent().removeClass('animate');
-			Session.set('subscribeStatus', {
-				message: 'Thank you for subscribing!',
-				class: 'alert-success'
-			})
+				console.log(err)			
+			}else{
+				console.log('successfully inserted subscriber: '+id);
+				$(target).find('input').val("");
+				$(target).parent().removeClass('animate');
+				Session.set('subscribeStatus', {
+					message: 'Good call <b>champ</b>! We\'ll keep you updated.',
+					class: 'alert-success'
+				})
+			}			
 		});
 	}
 });
