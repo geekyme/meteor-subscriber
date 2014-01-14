@@ -11,7 +11,9 @@ Add the template to your project
 
 The size of the template is made to fill 100% of its container, so wrap a container around it with your desired width.
 
-[DEMO](https://subscriber.meteor.com/)
+This package does not require bootstrap-3, but I recommend it as the framework does polish up some styles to make buttons to look nicer for example.
+
+[DEMO installed with BS3](https://subscriber.meteor.com/)
 
 FEATURES
 ====
