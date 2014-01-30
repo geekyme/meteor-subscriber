@@ -12,8 +12,9 @@ Package.on_use(function(api, where){
 
 // todo test
 Package.on_test(function(api) {
-  // api.use('errors', 'client');
-  // api.use(['tinytest', 'test-helpers'], 'client');  
+  api.use('subscriber', ['client', 'server']);
+  api.use(['tinytest', 'test-helpers'], 'client');  
 
-  // api.add_files('errors_tests.js', 'client');
+  api.add_files('test.js', ['client']);
+  api.add_files('test-server.js', ['server']);
 });
