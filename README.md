@@ -3,7 +3,7 @@ Meteor-subscriber
 
 I make several landing pages for my own ideas and I always need a quick way to collect emails. This package solves that problem by providing a super easy way to add an email 'subscribe' form to your project pages. 
 
-INSTALLATION
+Installation
 ====
 Simply 
 ```mrt install subscriber```
@@ -11,11 +11,11 @@ Simply
 Then add the template to your project
 ```{{> subscriberClassic}}```
 
-DEMO
+Demo
 ====
 [DEMO installed with BS3](https://subscriber.meteor.com/)
 
-FEATURES
+Features
 ====
 * Template fills 100% of its container, so wrap a container around it with your desired width
 * Inserts a document into collection ```subscribers``` with properties ```email``` & ```joined```. 
@@ -26,7 +26,7 @@ FEATURES
 * In your own app code you can access the collection of subscribers with ```Subscribers```, then you can write further hooks or allow / deny callbacks on the collection.
 * Doesn't require BS3, but recommended since BS3 polish up some styles
 
-TODO
+Todo
 ====
 * Tests
 * Some customization options
