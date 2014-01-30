@@ -14,6 +14,7 @@ Then add the template to your project
 Demo
 ====
 [DEMO installed with BS3](https://subscriber.meteor.com/)
+[Repository](https://github.com/geekyme/meteor-subscriber-demo)
 
 Features
 ====
