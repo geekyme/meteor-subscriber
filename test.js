@@ -1,15 +1,25 @@
-Tinytest.add("Subscribers collection exist", function(test){
-	test.equal(Subscribers.find().count(), 0);
-});
+if(Meteor.isServer){
+	Subscribers.allow({
+		remove: function(){
+			return true
+		}
+	})
+}
 
-Tinytest.add("insertSubscriber method works", function(test){
-	var count = Subscribers.find().count();
-	var email = 'myemail@example.com';
-	Meteor.call('insertSubscriber', email, function(err, id){
-		// remove the inserted subscriber after a while
-		Meteor.setTimeout(function(){Subscribers.remove(id)}, 1000);
+if(Meteor.isClient){
+
+	Tinytest.add("Meteor-Subscriber - subscriber collection exist", function(test){
+		test.instanceOf(Subscribers, Meteor.Collection)
 	});
-	var newCount = Subscribers.find().count();
-	test.equal(newCount, count+1);
-});
 
+	testAsyncMulti("Meteor-Subscriber - insertSubscriber method works", [
+		function(test, expect){
+			var email = 'myemail@example.com';
+			Meteor.call('insertSubscriber', email, expect(function(err, id){
+				test.isFalse(err) // falsy value includes undefined
+				test.isTrue(id) // truthy value includes a real string
+				Subscribers.remove(id); // remove the inserted email after testing
+			}));			
+		}
+	]);
+}
