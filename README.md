@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/geekyme/meteor-subscriber.png?branch=master)](https://travis-ci.org/geekyme/meteor-subscriber)
-
-Meteor-subscriber
+Meteor-subscriber [![Build Status](https://travis-ci.org/geekyme/meteor-subscriber.png?branch=master)](https://travis-ci.org/geekyme/meteor-subscriber)
 =====
 
 I make several landing pages for my own ideas and I always need a quick way to collect emails. This package solves that problem by providing a super easy way to add an email 'subscribe' form to your project pages. 
