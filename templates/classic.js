@@ -3,25 +3,22 @@ Template.subscriberClassic.events({
 		e.preventDefault();
 		var target = e.target;
 		var email = $(target).find('input').val(); // fetch the input value
-		var date = new Date().getTime(); // in epoch milliseconds
-		$(target).parent().addClass('animate');
-		Subscribers.insert({email: email, joined: date}, function(err, id){
+		Meteor.call('insertSubscriber', email, function(err, id){
 			if(err){ 
 				Session.set('subscribeStatus', {
-					message: '<b>Damn</b>. An error occured. Try again later?',
+					message: err.reason,
 					class: 'alert-danger'
 				})
 				console.log(err)			
 			}else{
 				console.log('successfully inserted subscriber: '+id);
 				$(target).find('input').val("");
-				$(target).parent().removeClass('animate');
 				Session.set('subscribeStatus', {
 					message: 'Good call <b>champ</b>! We\'ll keep you updated.',
 					class: 'alert-success'
 				})
-			}			
-		});
+			}
+		})
 	}
 });
 
