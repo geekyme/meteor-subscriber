@@ -28,5 +28,4 @@ Features
 
 Todo
 ====
-* Tests
 * Some customization options

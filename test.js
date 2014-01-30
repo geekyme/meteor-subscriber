@@ -12,3 +12,4 @@ Tinytest.add("insertSubscriber method works", function(test){
 	var newCount = Subscribers.find().count();
 	test.equal(newCount, count+1);
 });
+
