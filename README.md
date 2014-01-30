@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/geekyme/meteor-subscriber.png?branch=master)](https://travis-ci.org/geekyme/meteor-subscriber)
+
 Meteor-subscriber
 =====
 
