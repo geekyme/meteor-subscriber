@@ -18,11 +18,14 @@ This package does not require bootstrap-3, but I recommend it as the framework d
 FEATURES
 ====
 * Easy installation
-* populate collection 'subscribe' with documents (properties: email, timestamps)
+* Inserts a document into collection 'subscribers' with properties 'email' & 'joined'. 
+* Insertion method uses a meteor method called 'insertSubscriber' that takes an email as an argument. 
+* Email supplied by user is regex tested
+* The date is computed at the server side
 * show status after pressing subscribe button to show success / failure
+* In your own app code you can access the collection of subscribers with 'Subscribers', then you can write further hooks or allow / deny callbacks on the collection.
 
 TODO
 ====
-* Design / better looking templates
 * Tests
 * Some customization options
